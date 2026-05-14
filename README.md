@@ -36,6 +36,11 @@ The project follows a **Client-Server Architecture**:
 ### Contact Form
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/79c2ea41-ec57-4681-8eea-770427ed62f4" />
 
+##Register 
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/a6a347a8-c238-4827-8f9a-ba9cbc292572" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/28234045-d7c8-4e8a-9799-a5f414c3a1c7" />
+
+
 
 ## Author
 Tamara Emran
