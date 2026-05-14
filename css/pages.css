@@ -1,0 +1,549 @@
+/* ========================================================================== 
+   INDEX OF PAGES STYLES: 
+   1. Shared Page Elements 
+   2. Project Card (About Us) 
+   3. Team Table (About Us) 
+   4. Forms Layout (Contact Us / Add Event) 
+   5. HOME PAGE & EVENT CARDS 
+   6. Responsive Design 
+   ==========================================================================  
+*/ 
+ 
+/* 1. SHARED PAGE ELEMENTS */ 
+.container { 
+    max-width: 1000px; 
+    margin: 50px auto; 
+    padding: 0 20px; 
+    margin-top: 20px; 
+} 
+.nav-links li a { 
+    font-weight: 600; 
+    padding: 8px 10px; 
+    border-radius: 8px; 
+    transition: all 0.3s ease; 
+     
+} 
+.nav-links li a:hover { 
+    background-color:  #004a99; 
+    border-radius: 8px; 
+    color: white !important;; 
+} 
+.section-title { 
+    color: var(--secondary-color); 
+    margin-bottom: 25px; 
+    font-size: 1.8rem; 
+    font-weight: 700; 
+} 
+ 
+/* 2. PROJECT CARD (About Us Page) */ 
+.project-card-small { 
+    background: var(--white); 
+    padding: 25px 35px; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+    margin-bottom: 50px; 
+    border-left: 5px solid var(--primary-color); 
+    max-width: 850px; 
+} 
+ 
+.project-card-small p { 
+    margin-top: 0; 
+    color: var(--text-muted); 
+} 
+ 
+.tech-stack h3 { 
+    font-size: 0.9rem; 
+    margin: 15px 0 10px 0; 
+    color: var(--primary-color); 
+    text-transform: uppercase; 
+} 
+ 
+.tech-stack ul { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    list-style: none; 
+    padding: 0; 
+} 
+ 
+.tech-stack li { 
+    background: var(--accent-color); 
+    padding: 6px 14px; 
+    border-radius: 20px; 
+    font-size: 0.8rem; 
+    font-weight: 600; 
+    color: var(--secondary-color); 
+} 
+ 
+/* 3. TEAM TABLE (About Us Page) */ 
+.table-responsive { 
+    overflow-x: auto; 
+} 
+ 
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: var(--white); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+} 
+ 
+th { 
+    background-color: var(--secondary-color); 
+    color: white; 
+    padding: 18px; 
+    text-align: left; 
+} 
+ 
+td { 
+    padding: 15px 18px; 
+    border-bottom: 1px solid #eee; 
+} 
+ 
+td a { 
+    color: var(--primary-color); 
+    text-decoration: none; 
+} 
+ 
+.linkedin-link { 
+    color: #0077b5 !important; 
+    font-weight: bold; 
+} 
+ 
+/* 4. FORMS LAYOUT (Contact & Add Event) */ 
+.form-container { 
+    background: var(--white); 
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    max-width: 800px; 
+    margin: 0 auto; 
+} 
+ 
+.form-description { 
+    color: var(--text-muted); 
+    margin-bottom: 30px; 
+    text-align: center; 
+} 
+ 
+.form-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+} 
+ 
+.form-group { 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 20px; 
+} 
+ 
+.full-width { 
+    grid-column: span 2; 
+} 
+ 
+label { 
+    font-weight: 600; 
+    margin-bottom: 8px; 
+    color: var(--secondary-color); 
+    font-size: 0.9rem; 
+} 
+ 
+input, select, textarea { 
+    padding: 12px 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    font-family: inherit; 
+    transition: all 0.3s ease; 
+} 
+ 
+input:focus, select:focus, textarea:focus { 
+    outline: none; 
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 0 3px rgba(0, 74, 153, 0.1); 
+} 
+ 
+.radio-group { 
+    display: flex; 
+    gap: 30px; 
+    margin-top: 5px; 
+} 
+ 
+.radio-label { 
+    cursor: pointer; 
+    font-weight: 500; 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+} 
+ 
+.submit-btn { 
+    background-color: var(--primary-color); 
+    color: white; 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    width: 100%; 
+    transition: background 0.3s ease; 
+    margin-top: 10px; 
+} 
+ 
+.submit-btn:hover { 
+    background-color: var(--secondary-color); 
+} 
+ .icon-left {
+    margin-left: 8px;
+}
+/* ========================================================================== 
+   5. HOME PAGE & EVENT CARDS 
+   ========================================================================== */ 
+ 
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; } 
+ 
+.events-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 25px; 
+} 
+  
+.event-card { 
+    background: var(--white); 
+    aspect-ratio: 1 / 1; 
+    border-radius: 15px; 
+    position: relative; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    transition: transform var(--transition), box-shadow var(--transition); 
+    border: 1px solid #eee; 
+} 
+ 
+.event-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1); 
+} 
+ 
+/* (Badge) */ 
+.event-badge { 
+    position: absolute; 
+    top: 15px; 
+    right: 15px; 
+    background: var(--primary-color); 
+    color: white; 
+    padding: 5px 12px; 
+    border-radius: 20px; 
+    font-size: 0.75rem; 
+    font-weight: bold; 
+} 
+.event-badge.badge-workshop { background-color: #a577b8; }    
+.event-badge.badge-seminar { background-color: #2874a6; }     
+.event-badge.badge-hackathon { background-color: #328c8d; }   
+.event-badge.badge-competition { background-color: #ed408b; } 
+.event-badge.badge-other { background-color: #faa300; }       
+ 
+.event-content h3 { 
+    color: var(--secondary-color); 
+    margin-bottom: 15px; 
+    font-size: 1.2rem; 
+} 
+.event-details p { 
+    font-size: 0.85rem; 
+    color: var(--text-muted); 
+    margin: 8px 0; 
+}  
+.event-details i { 
+    color: var(--primary-color); 
+    margin-right: 5px; 
+    width: 15px; 
+}  
+.view-btn { 
+    display: inline-block; 
+    margin-top: 15px; 
+    padding: 8px 20px; 
+    background: var(--primary-color); 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 0.85rem; 
+    transition: background var(--transition); 
+}  
+.view-btn:hover { 
+    background: var(--secondary-color); 
+} 
+/* Dashboard Elements */ 
+.dashboard-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 30px; 
+} 
+.add-new-btn { 
+    background: #27ae60; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 0.9rem; 
+} 
+.status-badge { 
+    padding: 5px 12px; 
+    border-radius: 20px; 
+    font-size: 0.8rem; 
+    font-weight: bold; 
+} 
+.status-badge.active { 
+    background: #e8f5e9; 
+    color: #2e7d32; 
+} 
+.status-badge.past {
+    background-color: #e0e0e0; 
+    color: #616161;            
+} 
+/* register */ 
+.register-btn { 
+    background-color: #27ae60; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    font-size: 0.85rem; 
+    cursor: pointer; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background var(--transition), transform 0.2s; 
+    white-space: nowrap; 
+} 
+.register-btn:hover { 
+    background-color: #219150;
+    transform: scale(1.05); 
+} 
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5); 
+}
+.modal-content { 
+    background-color: white; 
+    margin: 10% auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 400px; 
+    position: relative; 
+}
+.modal-title { 
+    color: var(--secondary-color); 
+    margin-bottom: 15px; 
+    font-size: 1.5rem; 
+    text-align: center; 
+}
+.close { position: absolute; 
+    right: 20px; 
+    top: 10px; 
+    font-size: 28px; 
+    cursor: pointer; 
+}
+td.actions-cell { 
+    text-align: center; 
+    vertical-align: middle; 
+} 
+/* --- Brand Area --- */ 
+.nav-logo { 
+    font-weight: 700; 
+    font-size: 1.4rem; 
+    color: #002d62; 
+     font-family: 'Raleway', sans-serif; 
+} 
+ 
+/* --- Hero Layout --- */ 
+.hero { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 80px 8%; 
+    background: linear-gradient(
+     rgba(121, 169, 220, 0.9),
+     rgba(41, 81, 128, 0.95)), 
+     url('../images/uj.png');  
+    background-size: cover; 
+    background-position: center; 
+    min-height: 450px; 
+} 
+.hero-container { 
+    display: flex; 
+    width: 100%; 
+    max-width: 1100px; 
+    align-items: center; 
+    gap: 50px; 
+} 
+.hero-text { flex: 1; text-align: left; } 
+.hero-image-box {  
+    flex: 1;  
+    height: 300px;  
+    background: rgba(255,255,255,0.1);  
+    border-radius: 20px; 
+    border: 2px dashed rgba(255,255,255,0.3);  
+} 
+.hero-image-box img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px; 
+} 
+/* --- Action Buttons --- */ 
+.hero-buttons { 
+    display: flex; 
+    gap: 15px; 
+    margin-top: 25px; 
+} 
+.btn-primary { 
+    background: white; 
+    color: var(--primary-color); 
+    padding: 12px 25px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: bold; 
+} 
+.btn-outline { 
+    border: 1px solid white; 
+    color: white; 
+    padding: 12px 25px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+} 
+/* --- Stats Bar  --- */ 
+.stats-bar { 
+    max-width: 900px; 
+    margin: -40px auto 50px; 
+    padding: 30px; 
+    gap: 15px; 
+    display: grid; 
+    grid-template-columns: repeat(4, 200px); 
+    border-radius: 12px;  
+    position: relative; 
+    justify-content: center; 
+    z-index: 5; 
+    text-align: center; 
+    background: none; 
+    box-shadow: none; 
+    overflow: visible; 
+    padding: 30px 30px 40px 30px; 
+} 
+.stat-item { 
+    background: white; 
+    padding: 15px; 
+    text-align: center; 
+    border-radius: 12px; 
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); 
+     transition: all 0.3s ease; 
+     
+} 
+.stat-item:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+    
+}  
+.stat-item h2 { 
+    color: var(--secondary-color); 
+    font-size: 1.8rem; 
+    margin-bottom: 5px; 
+} 
+.stat-item p { 
+    color: var(--text-muted); 
+    font-size: 0.85rem; 
+    text-transform: uppercase; 
+}  
+.modal-details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.modal-divider {
+    margin: 15px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.modal-description {
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.modal-action {
+    margin-top: 25px;
+}
+/* 6. RESPONSIVE DESIGN */ 
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .nav-logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) { 
+    .form-grid {
+        grid-template-columns: 1fr; 
+    } 
+
+    .full-width { 
+        grid-column: span 1; 
+    } 
+
+    .section-title { 
+        font-size: 1.5rem; 
+        text-align: center; 
+    } 
+
+    .stats-bar { 
+        grid-template-columns: repeat(2, 150px); 
+    }
+
+    .navbar {
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-brand-area {
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+}

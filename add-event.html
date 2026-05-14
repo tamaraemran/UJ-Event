@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event - UJ Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+   <nav class="navbar">
+        <div class="nav-brand-area" >
+            <img src="images/uj_icon.png" alt="UJ Logo" class="nav-logo-img" >
+            <div class="nav-logo">UJ Event</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="add-event.html">Add Event</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class="section-title">Host a New Event</h1>
+        <div class="form-container">
+            <form action="/add-new-event" id="addEventForm" method="POST">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Event Title</label>
+                        <input type="text" 
+                        name="eventTitle" 
+                        id="eventTitle" 
+                        placeholder="e.g. Cyber Security Workshop" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" 
+                        name="eventDate" 
+                        id="eventDate" 
+                        required>
+                    </div>
+                    <div class="form-group">
+                        <label>Time</label>
+                        <input type="time" 
+                        name="eventTime" 
+                        id="eventTime" 
+                        required>
+                    </div>
+                    <div class="form-group"> 
+                      <label>Location</label> 
+                       <select name="eventLocation"> 
+                        <option>Conference Center University of Jeddah</option> 
+                        <option>Princess Al-Jawhara Hall University of Jeddah</option> 
+                        <option>Building 1 College of Languages and Translation</option>
+                        <option>Building 5 College of Science</option> 
+                        <option>Building 11 College of Computer Science and Engineering</option> 
+                        <option>Building 14</option> 
+                        <option>Building 17</option>   
+                        <option>Online</option>
+                    </select> 
+                </div> 
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select name="eventCategory" id="eventCategory">
+                            <option>Workshop</option>
+                            <option>Seminar</option>
+                            <option>Hackathon</option>
+                            <option>Competition</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Description</label>
+                        <textarea name="eventDescription" 
+                        id="eventDescription" 
+                        rows="4" 
+                        placeholder="Describe the event details..."></textarea>
+                    </div>
+                </div>
+                <div id="addEventMessage" class="message-area"></div>
+                <button type="submit" class="submit-btn">Publish Event</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

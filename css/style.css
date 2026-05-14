@@ -1,0 +1,78 @@
+:root { 
+    --primary-color: #004a99;       
+    --secondary-color: #002d62;     
+    --accent-color: #007bffa3;         
+    --bg-color: #f8fafc;            
+    --white: #ffffff; 
+    --text-main: #1e293b;           
+    --text-muted: #64748b;          
+    --transition: 0.3s ease; 
+} 
+ 
+/* ========================================================================== 
+   RESET & BASE STYLES 
+   ========================================================================== */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    background-color: var(--bg-color); 
+    color: var(--text-main); 
+    line-height: 1.6; 
+} 
+/* ========================================================================== 
+   NAVBAR 
+   ========================================================================== */ 
+.navbar { 
+    background-color: var(--white);  
+    padding: 0 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+     height: 65px; 
+ 
+}  
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 30px; 
+    align-items: center; 
+} 
+ 
+.nav-links a { 
+    color: var(--text-main); 
+    text-decoration: none; 
+    transition: var(--transition); 
+    font-size: 0.95rem; 
+    font-weight: 500; 
+} 
+.nav-brand-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+/* ========================================================================== 
+   FOOTER 
+   ========================================================================== */ 
+footer { 
+    text-align: center; 
+    padding: 2rem; 
+    background-color: #f1f1f1; 
+    color: var(--text-muted); 
+    font-size: 0.85rem; 
+    margin-top: 50px; 
+    border-top: 1px solid #ddd; 
+}

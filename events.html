@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Dashboard - UJ Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+     <nav class="navbar">
+        <div class="nav-brand-area" >
+            <img src="images/uj_icon.png" alt="UJ Logo" class="nav-logo-img">
+            <div class="nav-logo">UJ Event</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="add-event.html">Add Event</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <h1 class="section-title">Join an Event</h1>
+            <a href="add-event.html" class="add-new-btn"><i class="fas fa-plus"></i> Create New Event</a>
+        </div>
+
+        <div class="table-responsive">
+    <table>
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="eventsTableBody">
+           
+        </tbody>
+    </table>
+</div>
+    </main>
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalEventTitle">Register for Event</h2>
+        <form id="registrationForm">
+            <input type="hidden" id="modalEventId">
+            <div class="form-group">
+                <label>Student Name:</label>
+                <input type="text" id="regName" required>
+            </div>
+            <div class="form-group">
+                <label>University ID:</label>
+                <input type="text" id="regId" required>
+            </div>
+            <button type="submit" class="submit-btn">Confirm Registration</button>
+        </form>
+        <div id="modalMessage"></div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2026 UJ Event - University of Jeddah</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UJ Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand-area" >
+            <img src="images/uj_icon.png" alt="UJ Logo" class="nav-logo-img">
+            <div class="nav-logo">UJ Event</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="add-event.html">Add Event</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class="section-title">Get in Touch</h1>
+         
+        <div class="form-container">
+            <p class="form-description">Have a question or need help? Fill out the form below and our team will get back to you soon.</p>
+            
+            <form action="/submit-form" method="POST" id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" 
+                         id="firstName"
+                         name="firstName" 
+                         placeholder="First name" 
+                         required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" 
+                         id="lastName" 
+                         name="lastName" 
+                         placeholder="Last name" 
+                         required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+                               title="Please enter a valid email address (e.g., name@uj.edu.sa)"
+                               placeholder="example@uj.edu.sa" 
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" 
+                               id="mobile" 
+                               name="mobile" 
+                               pattern="^05[0-9]{8}$" 
+                               title="Mobile number must start with 05 and be exactly 10 digits" 
+                               placeholder="05XXXXXXXX" 
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="language">Preferred Language</label>
+                        <select id="language" name="language" required>
+                            <option value="" disabled selected>Select Language</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="English">English</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" 
+                            name="gender" 
+                            value="Male" 
+                            required> Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" 
+                            name="gender" 
+                            value="Female" 
+                            required> Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" 
+                    name="message" 
+                    rows="5" 
+                    placeholder="Write your message here..." 
+                    required></textarea>
+                </div>   
+                <div id="responseMessage" class="message-area"></div>
+                <button type="submit" class="submit-btn">
+                    Send Message <i class="fas fa-paper-plane" ></i>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 UJ Event - University of Jeddah</p>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

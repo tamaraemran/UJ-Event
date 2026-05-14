@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - UJ Event</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+   <nav class="navbar">
+        <div class="nav-brand-area" >
+            <img src="images/uj_icon.png" alt="UJ Logo" class="nav-logo-img">
+            <div class="nav-logo">UJ Event</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="add-event.html">Add Event</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+<header class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Discover University Events</h1>
+            <p>Stay connected with the latest workshops, seminars, and activities at University of Jeddah.</p>
+            <div class="hero-buttons">
+                <a href="events.html" class="btn-primary">Browse Events</a>
+                <a href="add-event.html" class="btn-outline">Create Event</a>
+            </div>
+        </div>
+        <div class="hero-image-box">
+            <img src="images/uj_building.png" alt="University of Jeddah" >
+          </div>
+    </div>
+</header>
+
+<div class="stats-bar">
+    <div class="stat-item">
+        <h2 id="upcomingCount">0</h2>
+        <p>Upcoming Events</p>
+    </div>
+    <div class="stat-item">
+        <h2>8</h2>
+        <p>Clubs Involved</p>
+    </div>
+    <div class="stat-item">
+        <h2>310</h2>
+        <p>Registrations</p>
+    </div>
+    <div class="stat-item">
+        <h2>5</h2>
+        <p>Event Types</p>
+    </div>
+</div>
+
+<main class="container">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div id="homeEventsGrid" class="events-grid"></div>
+</main>
+
+<div id="detailsModal" class="modal">
+    <div class="modal-content">
+        
+        <span class="close">&times;</span>
+        <div id="modalBadge" class="event-badge"></div>
+        <h3 id="modalTitle" class="modal-title"></h3>
+        <div class="event-details" >
+            <p>
+                <i class="far fa-calendar-alt"></i> 
+                <strong>Date:</strong> 
+                <span id="modalDate"></span>
+            </p>
+            <p>
+                <i class="far fa-clock"></i>
+                <strong>Time:</strong> 
+                <span id="modalTime"></span>
+            </p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i> 
+                <strong>Location:</strong> 
+                <span id="modalLocation"></span>
+            </p>
+            <p>
+                <strong><i class="fas fa-info-circle"></i> Status:</strong> 
+                <span id="modalStatus" class="status-badge"></span>
+            </p>
+            <hr class="modal-divider">
+            <p><strong>Description:</strong></p>
+            <p id="modalDesc" class="modal-description"></p>
+        </div>
+        <div class="modal-action">
+            <a href="events.html" class="btn-primary">Go to Registration</a>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2026 UJ Event - University of Jeddah</p>
+    </footer>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
